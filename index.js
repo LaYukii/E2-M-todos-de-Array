@@ -96,17 +96,12 @@ pizzasPrecio(pizzas);
 
 console.log("d) Todos los ingredientes de cada pizza.");
 
-// Utiliza forEach para iterar sobre cada pizza en el array "pizzas"
 pizzas.forEach(function (pizza) {
-  // Imprime el nombre de la pizza
   console.log("Pizza: " + pizza.nombre);
 
-  // Utiliza forEach para iterar sobre cada ingrediente de la pizza actual
   pizza.ingredientes.forEach(function (ingrediente) {
-    // Imprime el ingrediente
     console.log("  - " + ingrediente);
   });
 
-  // Agrega una línea en blanco para separar las pizzas
   console.log("");
 });
